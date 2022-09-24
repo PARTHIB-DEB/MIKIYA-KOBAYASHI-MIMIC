@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+header {
+    background-color:white;
+    color: black;
+    height: 5vw;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: sticky;
+    top: 0;
+}
+
+.projects {
+    margin-left: 1vw;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.menubar {
+    margin-left: 2rem;
+    height: 5vh;
+    width: 2vw;
+}
+
+.site-name {
+    margin: 0vw 7rem 0rem 28rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+}
+
+.search-all {
+    margin-left: 2vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.searchbar {
+    margin-left: 26vw;
+    height: 4vh;
+}
+
+.projects:hover, .menubar:hover, .site-name:hover, .search-all:hover, .searchbar:hover {
+    cursor: pointer;
+}
+
+.site-name:hover {
+    text-decoration: line-through;
+}
+
+
+@media only screen and (min-width:1191px) and (max-width:1242px) {
+    header {
+        height: 14vw;
+    }
+
+    .projects, .search-all {
+        display: none;
+    }
+
+    .menubar {
+        margin: auto;
+        height: 8vh;
+        width: 3vw;
+    }
+
+    .site-name {
+        margin: auto;
+        font-size: large;
+        margin: 0vw 8rem 0rem 9rem;
+    }
+
+    .searchbar {
+        height: 8vh;
+        margin: auto;
+    }
+
+
+}
+
+
+@media only screen and (min-width:711px) and (max-width:1190px) {
+    header {
+        height: 14vw;
+    }
+
+    .projects, .search-all {
+        display: none;
+    }
+
+    .menubar {
+        margin: auto;
+        height: 4vh;
+        width: 2vw;
+    }
+
+    .site-name {
+        margin: auto;
+        font-size: large;
+    }
+
+    .searchbar {
+        height: 4vh;
+        margin: auto;
+    }
+
+
+}
+
+
+@media only screen and (min-width:371px) and (max-width:711px) {
+    header {
+        height: 15vw;
+    }
+
+    .projects, .search-all {
+        display: none;
+    }
+
+    .menubar {
+        margin: auto;
+        height: 4vh;
+        width: 4vh;
+    }
+
+    .site-name {
+        margin: auto;
+    }
+
+    .searchbar {
+        height: 5vh;
+        margin: auto;
+    }
+
+
+}
+
+@media only screen and (min-width:139px) and (max-width:370px) {
+    header {
+        height: 8rem;
+    }
+
+    .site-name {
+        font-size: small;
+        margin: 0rem 0rem 5rem -3rem;
+    }
+
+    .menubar, .searchbar {
+        display: none;
+    }
+
+    #proj {
+        margin: 0rem 0rem 1rem 2rem;
+        font-size: small;
+    }
+
+    #search {
+        font-size: small;
+        margin: 4rem 0rem 1rem -8rem;
+    }
+
+}
